@@ -1,0 +1,25 @@
+Field,Definition / Treatment
+Row ID,Integer identifier assigned to each source record.
+Order ID,Order identifier supplied in the CSV; appears product-coded in the source format.
+Order Date,Order date parsed day-first from the source; used as primary sales-analysis date.
+Ship Date,Shipment date parsed day-first; dates are anomalously far after Order Date and should not be treated as validated delivery performance.
+Ship Mode,Shipping service/mode label.
+Customer ID,Customer identifier.
+Country/Region,Customer country or country/region label.
+City,Customer city.
+State/Province,Customer state or province.
+Postal Code,Postal/ZIP code; retained as text to preserve formatting.
+Division,Product division label.
+Region,Customer sales region label.
+Product ID,Product identifier.
+Product Name,Product name; whitespace standardized and spaces around hyphens normalized for consistency.
+Sales,Supplied sales amount.
+Units,Supplied units sold; missing values are not imputed.
+Gross Profit,Supplied gross profit; validated against Sales minus Cost.
+Cost,Supplied manufacturing cost.
+Gross Margin,Derived row-level Gross Profit / Sales.
+Cost Ratio,Derived row-level Cost / Sales.
+Profit per Unit,Derived row-level Gross Profit / Units where Units > 0.
+Order-to-Ship Days,"Derived calendar-day difference Ship Date minus Order Date; flagged as anomalous, not a delivery-time KPI."
+Order Month,Derived YYYY-MM from Order Date.
+Financial Identity Delta,Derived Sales - Cost - Gross Profit; validated using $0.01 tolerance.

@@ -1,0 +1,42 @@
+Check,Value,Status,Description
+Source rows,10194.0,Info,Raw record count
+Source columns,18.0,Info,Raw column count
+Exact duplicate rows,0.0,Review,Removed if present
+Duplicate Row IDs,0.0,Review,Flagged; not automatically removed
+Financial identity discrepancies > $0.01,0.0,Review,Checks Sales - Cost = Gross Profit
+Maximum absolute financial identity delta,7.105427357601002e-15,Info,Floating-point delta; tolerance is $0.01
+Order Date parse failures,0.0,Review,Invalid parsed dates remain missing
+Ship Date parse failures,0.0,Review,Invalid parsed dates remain missing
+Ship date before order date,0.0,Info,Impossible sequence if dates are intended to be chronological
+Order-to-ship gaps > 90 days,10194.0,Critical,All rows are flagged if gap exceeds 90 days; not treated as delivery time
+Minimum order-to-ship days,904.0,Info,Observed only; dates appear anomalous
+Median order-to-ship days,1274.0,Info,Observed only; dates appear anomalous
+Maximum order-to-ship days,1642.0,Info,Observed only; dates appear anomalous
+Invalid core financial records excluded,0.0,Review,See cleaning summary
+Negative Sales rows,0.0,Review,Count before financial exclusions
+Zero Sales rows,0.0,Review,Count before financial exclusions
+Negative Cost rows,0.0,Review,Count before financial exclusions
+Zero Units rows,0.0,Review,Not auto-excluded
+Negative Units rows,0.0,Review,Not auto-excluded
+Missing values - Row ID,0.0,Info,Raw source column missing count
+Missing values - Order ID,0.0,Info,Raw source column missing count
+Missing values - Order Date,0.0,Info,Raw source column missing count
+Missing values - Ship Date,0.0,Info,Raw source column missing count
+Missing values - Ship Mode,0.0,Info,Raw source column missing count
+Missing values - Customer ID,0.0,Info,Raw source column missing count
+Missing values - Country/Region,0.0,Info,Raw source column missing count
+Missing values - City,0.0,Info,Raw source column missing count
+Missing values - State/Province,0.0,Info,Raw source column missing count
+Missing values - Postal Code,0.0,Info,Raw source column missing count
+Missing values - Division,0.0,Info,Raw source column missing count
+Missing values - Region,0.0,Info,Raw source column missing count
+Missing values - Product ID,0.0,Info,Raw source column missing count
+Missing values - Product Name,0.0,Info,Raw source column missing count
+Missing values - Sales,0.0,Info,Raw source column missing count
+Missing values - Units,0.0,Info,Raw source column missing count
+Missing values - Gross Profit,0.0,Info,Raw source column missing count
+Missing values - Cost,0.0,Info,Raw source column missing count
+Values not numeric or missing - Sales,0.0,Info,Count after numeric coercion
+Values not numeric or missing - Units,0.0,Info,Count after numeric coercion
+Values not numeric or missing - Gross Profit,0.0,Info,Count after numeric coercion
+Values not numeric or missing - Cost,0.0,Info,Count after numeric coercion

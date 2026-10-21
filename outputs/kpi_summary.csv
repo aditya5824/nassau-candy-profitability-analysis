@@ -1,0 +1,14 @@
+KPI,Value,Definition
+Total Sales,141783.63,Sum of Sales on validated records.
+Total Gross Profit,93442.79999999999,Sum of supplied Gross Profit on validated records.
+Total Cost,48340.83,Sum of supplied Cost on validated records.
+Weighted Gross Margin (%),65.90521063679917,Sum(Gross Profit) / Sum(Sales) * 100.
+Cost Ratio (%),34.09478936320082,Sum(Cost) / Sum(Sales) * 100.
+Profit per Unit,2.4174160500853725,"Sum(Gross Profit) / Sum(Units), when units are available and positive."
+Total Units,38654.0,Sum of supplied Units; missing units are not filled.
+Distinct products,15.0,Count of distinct standardized product labels.
+Distinct provided Order IDs,8549.0,Distinct Order ID field values; source IDs appear product-coded.
+Distinct customers,5044.0,Distinct Customer ID values.
+Rows with negative gross profit,0.0,Count of source rows where Gross Profit < 0.
+Products with negative gross profit,0.0,Count of product aggregates with total Gross Profit < 0.
+Monthly gross-margin volatility (percentage points),0.5254797191615772,"Sample standard deviation (ddof=1) of monthly weighted margins, expressed in percent units."

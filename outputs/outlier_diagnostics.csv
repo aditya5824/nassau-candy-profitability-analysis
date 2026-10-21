@@ -1,0 +1,5 @@
+Field,Q1,Q3,IQR,Lower Fence,Upper Fence,Rows Outside IQR Fences,Treatment
+Sales,7.2,18.0,10.8,-9.000000000000004,34.2,245,"Retained; statistical outlier is a review cue, not proof of invalidity."
+Cost,2.4,5.7,3.3000000000000003,-2.5500000000000003,10.65,397,"Retained; statistical outlier is a review cue, not proof of invalidity."
+Gross Profit,4.9,12.25,7.35,-6.124999999999998,23.275,217,"Retained; statistical outlier is a review cue, not proof of invalidity."
+Units,2.0,5.0,3.0,-2.5,9.5,175,"Retained; statistical outlier is a review cue, not proof of invalidity."

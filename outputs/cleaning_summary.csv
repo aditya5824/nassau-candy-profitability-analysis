@@ -1,0 +1,7 @@
+Step,Rows Before,Rows Removed,Rows After,Rule / Notes
+Raw input records,10194,0,10194,Loaded from supplied CSV.
+Exact duplicate rows,10194,0,10194,Remove exact duplicates only; repeated Order IDs alone are not duplicates.
+Duplicate Row IDs,10194,0,10194,"0 duplicate Row ID(s) flagged, not auto-removed."
+Invalid core financial records,10194,0,10194,"Exclude missing core financials, Sales <= 0, or Cost < 0."
+Missing Units,10194,0,10194,0 missing Units retained; no zero imputation.
+Final usable analysis records,10194,0,10194,No financial imputation; negative Gross Profit remains valid.
